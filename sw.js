@@ -1,4 +1,4 @@
-const CACHE = 'plan-bella-hackney-2027-b1-3524b2e86c';
+const CACHE = 'plan-bella-hackney-2027-b1r-k7q2m-7fdbf81709';
 const PRECACHE = ['/', '/manifest.json', '/icon-192.png', '/icon-512.png'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(PRECACHE).catch(()=>{})).then(()=>self.skipWaiting()));
